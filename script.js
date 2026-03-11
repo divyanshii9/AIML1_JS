@@ -1,14 +1,10 @@
-var count ;
-    document.write("starting loop" +" <br/>");
-    for(count=0;count<10;count++){
-        document.write("current Count:" + count );
-        document.write("<br/>");
-    }
-const person={
-    fname:"Ajay",
-    Lname:"singh",
-    age:25
-};
-for(let x in person){
-    console.log("person details:" + ":"+ person[x])
+function sayHello(name, age) {
+    document.write(name + " is " + age + " years old. ");
 }
+
+function mul(x, y) {
+    return x * y;
+}
+
+let res = mul(12, 30);
+document.write(res);
