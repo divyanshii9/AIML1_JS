@@ -1,10 +1,24 @@
-function sayHello(name, age) {
-    document.write(name + " is " + age + " years old. ");
-}
+console.log("Hello World");
 
-function mul(x, y) {
-    return x * y;
-}
+var myInfo=new Array();
+var myInfo1 = new Array;
+console.log(myInfo, myInfo1);
 
-let res = mul(12, 30);
-document.write(res);
+
+let collection=[
+    {},
+    [],
+    true,
+    "john",
+    function() {},
+    90076654334,
+    undefined,
+    null,
+    new String("abc"),
+    new Date(),
+
+];
+console.log(collection);
+collection.teacherName="John mac";
+collection.phoneno=997867899;
+document.getElementById("myId")
