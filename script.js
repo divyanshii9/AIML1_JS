@@ -1,64 +1,25 @@
-// var text = '{"employees":[' +
-// '{"firstname":"John","lastname":"Doe"},' +
-// '{"firstname":"Anna","lastname":"Smith"},' +
-// '{"firstname":"Peter","lastname":"Jones"}]}';
+// DOM selection and manipulation demo
 
-// // Convert JSON string to object
-// var obj = JSON.parse(text);
+const result = document.getElementById("para");
+result.innerHTML = "My self";
+result.title = "myname";
 
-// // Display data
-// document.getElementById("Demo").innerHTML =
-//     obj.employees[0].firstname + " " + obj.employees[0].lastname;
-//     when the function is pass as an argument it is callled higher order function
-// Map METHOD
+const result2 = document.getElementsByClassName("heading");
+result2[0].innerHTML = "Hello Heading 1";
+result2[1].innerHTML = "Hello Heading 2";
 
-var numbers=[1,2,3,4];
-var result=numbers.map(n=>n*2);
-console.log(result);
+const result3 = document.getElementsByTagName("p");
+result3[2].innerHTML = "This is paragraph 3";
+result3[1].style.color = "blue";
+result3[1].innerText = "My Paragraph Updated";
 
-// Filter Method
-var number=[30,50];
-var result=number.filter(n=>n>20);
-console.log(result);
+const test = document.querySelector("ul li:nth-child(3)");
+test.style.backgroundColor = "green";
+test.style.padding = "10px";
 
-//Reduced Method
-var number=[10,20,30];
-var sum=number.reduce((total,n)=>total+n,0)
-console.log(sum);
+const test2 = document.querySelectorAll("ul li");
 
-
-//Promise Method
-var promise=new Promise((resolve,reject)=>{
-    let success=true;
-    if(success)
-    resolve("Data Loaded");
-else 
-reject("Error Occured");
-});
-promise.then(result=>console.log(result)).catch(error=>console.log(error));
-
-//Error Method
-try{
-    var x=y+10;
+for (let i = 0; i < test2.length; i++) {
+    test2[i].style.margin = "10px";
+    test2[i].style.color = "blue";
 }
-catch(error){
-    console.log(error.message);
-}
-
-//Local Storage allows data to be stored permanenetly in the browser
-// Store simple data
-localStorage.setItem("Name", "jeet");
-
-// Retrieve data
-var name = localStorage.getItem("Name");
-console.log(name);   // ✔ use 'name' not 'Name'
-
-// Store Object
-var user = { name: "Jeet", age: 50 };
-
-localStorage.setItem("user", JSON.stringify(user));  // ✔ setItem
-
-// Retrieve Object
-var data = JSON.parse(localStorage.getItem("user")); // ✔ localStorage spelling
-
-console.log(data);
