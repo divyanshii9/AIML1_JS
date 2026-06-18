@@ -17,13 +17,20 @@
 // function change() {
 //     event.target.style.color = "green";
 // }
-function addItem() {
+// function addItem() {
 
-    let li =
-    document.createElement("li");
+//     let li =
+//     document.createElement("li");
 
-    li.innerHTML = "Mango";
+//     li.innerHTML = "Mango";
 
-    document.getElementById("list")
-    .append(li);
+//     document.getElementById("list")
+//     .append(li);
+// }
+function showPass() {
+
+    let p =
+    document.getElementById("pass");
+
+    p.type = "text";
 }
