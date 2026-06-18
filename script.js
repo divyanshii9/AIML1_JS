@@ -1,30 +1,28 @@
-// // Function
-// var sayHello = function () {
-//     alert("Hello World!");
-// };
+var a = 40;
+var b = 20;
+var result;
+var linebreak = "<br>";
 
-// // Array
-// var numberArray = [1, 2, 3];
-// var animals = ["cat", "dog", "mouse", "lion"];
+document.write("Value of a => (a = b) => ");
+result = (a = b);
+document.write(result + linebreak);
 
-// // Object
-// var person = {
-//     name: "Barack Hussein Obama II",
-//     age: 51,
-//     title: "44th President of the United States"
-// };
+document.write("Value of a => (a += b) => ");
+result = (a += b);
+document.write(result + linebreak);
 
-// console.log(numberArray);
-// console.log(animals);
-// console.log(person);
-const sym1 = Symbol(4);
-console.log(sym1);
+document.write("Value of a => (a -= b) => ");
+result = (a -= b);
+document.write(result + linebreak);
 
-const sym2 = Symbol(4);
-console.log(sym2);
+document.write("Value of a => (a *= b) => ");
+result = (a *= b);
+document.write(result + linebreak);
 
-if (sym1 == sym2) {
-    console.log("true");
-} else {
-    console.log("false"); // because each Symbol is unique
-}
+document.write("Value of a => (a /= b) => ");
+result = (a /= b);
+document.write(result + linebreak);
+
+document.write("Value of a => (a %= b) => ");
+result = (a %= b);
+document.write(result + linebreak);
