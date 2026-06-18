@@ -14,6 +14,16 @@
 // function showTime() {
 //     document.getElementById("time").innerHTML = new Date();
 // }
-function change() {
-    event.target.style.color = "green";
+// function change() {
+//     event.target.style.color = "green";
+// }
+function addItem() {
+
+    let li =
+    document.createElement("li");
+
+    li.innerHTML = "Mango";
+
+    document.getElementById("list")
+    .append(li);
 }
