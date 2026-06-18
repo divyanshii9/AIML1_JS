@@ -11,6 +11,9 @@
 // function myFunction() {
 //     alert("Page Loaded Successfully");
 // }
-function showTime() {
-    document.getElementById("time").innerHTML = new Date();
+// function showTime() {
+//     document.getElementById("time").innerHTML = new Date();
+// }
+function change() {
+    event.target.style.color = "green";
 }
