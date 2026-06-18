@@ -27,10 +27,14 @@
 //     document.getElementById("list")
 //     .append(li);
 // }
-function showPass() {
+// function showPass() {
 
-    let p =
-    document.getElementById("pass");
+//     let p =
+//     document.getElementById("pass");
 
-    p.type = "text";
+//     p.type = "text";
+// }
+function changeBg() {
+    document.body.style.backgroundColor =
+    "lightblue";
 }
