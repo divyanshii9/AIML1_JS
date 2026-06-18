@@ -1,28 +1,10 @@
-var a = 40;
-var b = 20;
-var result;
-var linebreak = "<br>";
+var count;
 
-document.write("Value of a => (a = b) => ");
-result = (a = b);
-document.write(result + linebreak);
+document.write("Starting Loop" + "<br>");
 
-document.write("Value of a => (a += b) => ");
-result = (a += b);
-document.write(result + linebreak);
+for (count = 0; count < 10; count++) {
+    document.write("Current Count : " + count);
+    document.write("<br>");
+}
 
-document.write("Value of a => (a -= b) => ");
-result = (a -= b);
-document.write(result + linebreak);
-
-document.write("Value of a => (a *= b) => ");
-result = (a *= b);
-document.write(result + linebreak);
-
-document.write("Value of a => (a /= b) => ");
-result = (a /= b);
-document.write(result + linebreak);
-
-document.write("Value of a => (a %= b) => ");
-result = (a %= b);
-document.write(result + linebreak);
+document.write("Loop stopped!");
