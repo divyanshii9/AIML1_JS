@@ -5,6 +5,9 @@
 
 //     element.setAttribute("class","heading");
 // }
-function changeColor() {
-    document.getElementById("text").style.color = "red";
+// function changeColor() {
+//     document.getElementById("text").style.color = "red";
+// }
+function myFunction() {
+    alert("Page Loaded Successfully");
 }
