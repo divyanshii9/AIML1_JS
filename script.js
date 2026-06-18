@@ -1,10 +1,5 @@
-var count;
+var age = 20;
 
-document.write("Starting Loop" + "<br>");
-
-for (count = 0; count < 10; count++) {
-    document.write("Current Count : " + count);
-    document.write("<br>");
+if (age > 18) {
+    document.write("<b>You are eligible to cast the vote.</b>");
 }
-
-document.write("Loop stopped!");
