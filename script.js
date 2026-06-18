@@ -1,11 +1,21 @@
-var person = {
-    name: "John Mac",
-    age: 30,
-    isMarried: true,
-    address: {
-        street: "Vinay Nagar",
-        flatNO: 201
-    }
-};
+let collection = [
+    {},
+    [],
+    true,
+    "john",
+    function () {},
+    90009898193,
+    undefined,
+    null,
+    new String("abc"),
+    new Date()
+];
 
-console.log(person);
+console.log(collection);
+
+collection.teacherName = "John Mac";
+collection.phoneNo = 950008193;
+
+console.log(collection);
+console.log(collection.teacherName);
+console.log(collection.phoneNo);
