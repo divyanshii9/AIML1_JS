@@ -1,3 +1,11 @@
-function sayHello(name, age) {
-    document.write(name + " is " + age + " years old.");
-}
+var person = {
+    name: "John Mac",
+    age: 30,
+    isMarried: true,
+    address: {
+        street: "Vinay Nagar",
+        flatNO: 201
+    }
+};
+
+console.log(person);
