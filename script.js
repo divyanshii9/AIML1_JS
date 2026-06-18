@@ -1,33 +1,19 @@
-// // document.write example
-// function practice() {
-//     document.open();
-//     document.write("<h1>PRACTICE</h1>");
-//     document.close();
-// }
+// Function
+var sayHello = function () {
+    alert("Hello World!");
+};
 
-// // change text color on double click
-// function changeColor() {
-//     document.getElementById("text").style.color = "red";
-// }
+// Array
+var numberArray = [1, 2, 3];
+var animals = ["cat", "dog", "mouse", "lion"];
 
-// // change input style on key press
-// function customizeInput() {
-//     var ele = document.getElementsByTagName("input")[0];
-//     ele.style.backgroundColor = "yellow";
-//     ele.style.color = "red";
-// }
-// focus and blur events on input
+// Object
+var person = {
+    name: "Barack Hussein Obama II",
+    age: 51,
+    title: "44th President of the United States"
+};
 
-const x = document.querySelector("input");
-
-x.addEventListener("focus", onHandleFocus);
-x.addEventListener("blur", onHandleBlur);
-
-function onHandleFocus() {
-    x.style.background = "red";
-}
-
-function onHandleBlur() {
-    x.style.background = "yellow";
-    x.style.borderColor = "green";
-}
+console.log(numberArray);
+console.log(animals);
+console.log(person);
