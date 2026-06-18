@@ -8,7 +8,11 @@
 //         x[i].style.color = "red";
 //     }
 // }
-function changeTag() {
-    let p = document.getElementsByTagName("p");
-    p[1].innerHTML = "Changed Paragraph";
+// function changeTag() {
+//     let p = document.getElementsByTagName("p");
+//     p[1].innerHTML = "Changed Paragraph";
+// }
+function test() {
+    let x = document.querySelector("#title");
+    x.style.backgroundColor = "yellow";
 }
