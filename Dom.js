@@ -16,11 +16,14 @@
 //     let x = document.querySelector("#title");
 //     x.style.backgroundColor = "yellow";
 // }
-function addHeading() {
+// function addHeading() {
 
-    let h2 = document.createElement("h2");
+//     let h2 = document.createElement("h2");
 
-    h2.innerText = "Hello DOM";
+//     h2.innerText = "Hello DOM";
 
-    document.body.append(h2);
+//     document.body.append(h2);
+// }
+function removeElement() {
+    document.getElementById("demo").remove();
 }
