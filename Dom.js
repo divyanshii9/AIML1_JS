@@ -12,7 +12,15 @@
 //     let p = document.getElementsByTagName("p");
 //     p[1].innerHTML = "Changed Paragraph";
 // }
-function test() {
-    let x = document.querySelector("#title");
-    x.style.backgroundColor = "yellow";
+// function test() {
+//     let x = document.querySelector("#title");
+//     x.style.backgroundColor = "yellow";
+// }
+function addHeading() {
+
+    let h2 = document.createElement("h2");
+
+    h2.innerText = "Hello DOM";
+
+    document.body.append(h2);
 }
