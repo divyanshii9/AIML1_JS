@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Marks and Grade Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Marks and Grade Calculator</h2>
+
+        <label>Number of Subjects (1-5):</label>
+        <input type="number" id="numSubjects" min="1" max="5">
+
+        <button onclick="createInputs()">Create Fields</button>
+
+        <div id="subjects"></div>
+
+        <button onclick="calculateGrade()">Calculate</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
